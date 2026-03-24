@@ -43,7 +43,7 @@ fun MenuScreen(modifier: Modifier, navController: NavController) {
                 .align(Alignment.Center)
         ) {
             Button(
-                onClick = { navController.navigate("perfil") },
+                onClick = { navController.navigate("perfil/Fulano de Tal/27") },
                 colors = ButtonDefaults.buttonColors(Color.Gray),
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
             ) {
@@ -55,7 +55,7 @@ fun MenuScreen(modifier: Modifier, navController: NavController) {
             }
             Spacer(Modifier.height(40.dp))
             Button(
-                onClick = { navController.navigate("pedidos") },
+                onClick = { navController.navigate("pedidos?cliente=Cliente XPTO") },
                 colors = ButtonDefaults.buttonColors(Color.Gray),
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
             ) {
